@@ -1,12 +1,7 @@
 cmsplugin-randomquote
 =====================
 
-.. image:: https://pypip.in/d/cmsplugin-randomquote/badge.png
-    :alt: PyPI download stats
-    :target: https://crate.io/packages/cmsplugin-randomquote
-
-This is a django-cms plugin that displays a random quote (e.g. a testimonial)
-from your database.
+This is a django-cms plugin that displays a random quote (e.g. a testimonial) or testimonials with carousel.
 
 Setup / Configuration
 ---------------------
@@ -28,6 +23,11 @@ License
 
 Changelog
 ---------
+
+v0.1.4 (05.09.14)
+~~~~~~~~~~~~~~~~~
+
+- Added carousel
 
 v0.1.3 (08.07.12)
 ~~~~~~~~~~~~~~~~~
