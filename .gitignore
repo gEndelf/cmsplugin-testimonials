@@ -2,3 +2,5 @@
 /dist/
 /build/
 /cmsplugin_randomquote.egg-info/
+*.iml
+.idea

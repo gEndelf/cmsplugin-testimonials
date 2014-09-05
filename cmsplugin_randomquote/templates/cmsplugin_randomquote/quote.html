@@ -1,6 +1,31 @@
+{% load sekizai_tags %}
+
 <div class="quote">
-    <blockquote>{{ quote }}</blockquote>
-    <p>{% if author %}&ndash;
-    {% if author_url %}<a href="{{ author_url }}">{{ author }}</a>{% else %}{{ author }}{% endif %}
-    {% endif %}</p>
+    {% for quote_item in quotes %}
+    <div class="quote_item">
+        <blockquote>{{ quote_item.quote }}</blockquote>
+        <p>
+            {% if quote_item.author %}&ndash;
+                {% if quote_item.author_url %}
+                    <a href="{{ quote_item.author_url }}">{{ quote_item.author }}</a>
+                {% else %}{{ quote_item.author }}{% endif %}
+            {% endif %}
+        </p>
+    </div>
+    {% endfor %}
+    {% if display_mode == "CAROUSEL" %}
+    {% addtoblock "css" %}<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.3.6/slick.css"/>{% endaddtoblock %}
+    {% addtoblock "js" %}<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.3.6/slick.min.js"></script>{% endaddtoblock %}
+    {% addtoblock "js" %}
+    <script type="text/javascript">
+        $('.quote').slick({
+            autoplay: true,
+            autoplaySpeed: 5000,
+            dots: true,
+            speed: 700
+        });
+    </script>
+    {% endaddtoblock %}
+
+    {% endif %}
 </div>

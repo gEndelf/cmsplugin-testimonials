@@ -19,5 +19,6 @@ setup(
     install_requires=[
         'django-cms>=2.1',
         'django>=1.2',
+        'django-sekizai>=0.7'
     ]
 )
