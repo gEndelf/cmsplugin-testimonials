@@ -2,6 +2,7 @@ from setuptools import setup, find_packages
 
 version = __import__('cmsplugin_testimonials').__version__
 readme = open('README.md').read()
+requirements = open('requirements.txt').read().split('\n')
 
 setup(
     name='cmsplugin_testimonials',
@@ -16,9 +17,5 @@ setup(
     packages=find_packages(),
     include_package_data=True,
     zip_safe=False,
-    install_requires=[
-        'django-cms>=2.1',
-        'django>=1.2',
-        'django-sekizai>=0.7'
-    ]
+    install_requires=requirements
 )

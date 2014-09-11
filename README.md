@@ -1,7 +1,7 @@
 cmsplugin-randomquote
 =====================
 
-Testimonials django-cms plugin.
+Testimonials django-cms plugin based on [**random quote** plugin](https://github.com/dbrgn/cmsplugin-randomquote).
 
 Setup / Configuration
 ---------------------

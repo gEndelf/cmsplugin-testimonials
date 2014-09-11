@@ -1,0 +1,4 @@
+django<1.7
+django-cms>=2.1
+django-sekizai>=0.7
+South
