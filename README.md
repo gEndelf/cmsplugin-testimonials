@@ -1,40 +1,31 @@
 cmsplugin-randomquote
 =====================
 
-This is a django-cms plugin that displays a random quote (e.g. a testimonial) or testimonials with carousel.
+Testimonials django-cms plugin.
 
 Setup / Configuration
 ---------------------
 
-- Install this plugin (``pip install cmsplugin-randomquote``)
-- Add ``cmsplugin_randomquote`` to your ``INSTALLED_APPS``
+- Install this plugin (``pip install cmsplugin-testimonials``)
+- Add ``cmsplugin-testimonials`` to your ``INSTALLED_APPS``
 - Run the schema migrations::
   
     python manage.py syncdb
-    python manage.py migrate cmsplugin_randomquote
+    python manage.py migrate cmsplugin-testimonials
 
 - Add the plugin to a placeholder
-- Create some ``Quote`` Objects in the admin panel
+- Create some ``Testimonial`` Objects in the admin panel
 
 License
 -------
 
-`MIT <http://www.opensource.org/licenses/mit-license.html>`_, see LICENSE.txt
+[MIT](http://www.opensource.org/licenses/mit-license.html), see LICENSE
 
 Changelog
 ---------
 
-v0.1.4 (05.09.14)
+v1.0.0 (11.09.14)
 ~~~~~~~~~~~~~~~~~
 
-- Added carousel
-
-v0.1.3 (08.07.12)
-~~~~~~~~~~~~~~~~~
-
-- Added optional author URL field
-
-v0.1.2 (07.07.12)
-~~~~~~~~~~~~~~~~~
-
-- Initial release
+- Separated from https://github.com/dbrgn/cmsplugin-randomquote django-cms plugin
+- add carousel functionality

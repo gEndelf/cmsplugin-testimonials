@@ -12,7 +12,7 @@ setup(
     author_email='alex.com.ua@gmail.com',
     url='https://github.com/gEndelf/cmsplugin-testimonials',
     license='MIT',
-    keywords='django django-cms cms plugin testimonials carousel',
+    keywords='django django-cms cms plugin testimonials',
     packages=find_packages(),
     include_package_data=True,
     zip_safe=False,
