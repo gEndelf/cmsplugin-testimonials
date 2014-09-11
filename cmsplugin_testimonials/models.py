@@ -3,8 +3,8 @@ from django.db import models
 from django.utils.translation import ugettext_lazy as _
 
 
-class Quote(models.Model):
-    quote = models.TextField(_(u'Quote Text'))
+class Testimonial(models.Model):
+    quote = models.TextField(_(u'Testimonial Text'))
     author = models.CharField(_(u'Author'), max_length=255)
     author_url = models.URLField(_(u'Author URL'), null=True, blank=True,
                                  default=None, max_length=255)
@@ -13,7 +13,7 @@ class Quote(models.Model):
         return '[%s] %s...' % (self.author, self.quote[:20])
 
 
-class QuoteSettings(CMSPlugin):
+class TestimonialSettings(CMSPlugin):
     SINGLE_RANDOM = 'RANDOM'
     CAROUSEL = 'CAROUSEL'
     DISPLAY_MODE_CHOICES = (

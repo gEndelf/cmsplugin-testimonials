@@ -1,19 +1,19 @@
 from setuptools import setup, find_packages
 
-version = __import__('cmsplugin_randomquote').__version__
-readme = open('README.rst').read()
+version = __import__('cmsplugin_testimonials').__version__
+readme = open('README.md').read()
 
 setup(
-    name = 'cmsplugin-randomquote',
-    version = version,
-    description = 'Random quote plugin for the django CMS.',
+    name='cmsplugin_testimonials',
+    version=version,
+    description='Testimonials plugin for the django CMS.',
     long_description=readme,
-    author = 'Danilo Bargen',
-    author_email = 'gezuru@gmail.com',
-    url = 'http://github.com/gwrtheyrn/cmsplugin-randomquote',
+    author='Alex Padalka, Danilo Bargen',
+    author_email='alex.com.ua@gmail.com',
+    url='https://github.com/gEndelf/cmsplugin-testimonials',
     license='MIT',
-    keywords='django django-cms cms plugin quotes testimonials',
-    packages = find_packages(),
+    keywords='django django-cms cms plugin testimonials carousel',
+    packages=find_packages(),
     include_package_data=True,
     zip_safe=False,
     install_requires=[

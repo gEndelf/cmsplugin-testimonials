@@ -1,6 +1,9 @@
+# IDE
+*.iml
+.idea
+
+# build
 *.pyc
 /dist/
 /build/
-/cmsplugin_randomquote.egg-info/
-*.iml
-.idea
+*.egg-info
