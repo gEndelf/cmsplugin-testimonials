@@ -8,10 +8,12 @@ Setup / Configuration
 
 - Install this plugin (``pip install cmsplugin-testimonials``)
 - Add ``cmsplugin-testimonials`` to your ``INSTALLED_APPS``
-- Run the schema migrations::
+- Run the schema migrations:
   
+```
     python manage.py syncdb
     python manage.py migrate cmsplugin-testimonials
+```
 
 - Add the plugin to a placeholder
 - Create some ``Testimonial`` Objects in the admin panel
