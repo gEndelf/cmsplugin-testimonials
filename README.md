@@ -26,6 +26,7 @@ v1.0.0 (11.09.14)
 - Separated from https://github.com/dbrgn/cmsplugin-randomquote django-cms plugin
 - add carousel functionality
 
+
 #### License
 
 [MIT](http://www.opensource.org/licenses/mit-license.html), see LICENSE
