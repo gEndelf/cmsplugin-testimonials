@@ -21,11 +21,9 @@ Sponsored by [MVP engine](http://mvpngn.com)
 #### Changelog
 
 v1.0.0 (11.09.14)
-~~~~~~~~~~~~~~~~~
 
 - Separated from https://github.com/dbrgn/cmsplugin-randomquote django-cms plugin
 - add carousel functionality
-
 
 #### License
 
